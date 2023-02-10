@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Example</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var person = {
+        name: "Brad",
+        age: 35
+    }
+    jsonPerson = JSON.stringify(person); //convert to JSON
+    console.log(jsonPerson.name); //undefined
+
+    jsPerson = JSON.parse(jsonPerson); //convert to JS Object
+    console.log(jsPerson.name); //Brad
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Looping inside an array using for loop also retrieving value using index</p>
+<p id="demo"></p>
+<script>
+var sample, i, x = "";
+sample = {
+months: ["January", "February", "March", "April", "May", "June", "July"]
+};
+for (i in sample.months) {
+x += sample.months[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = x;
+document.write('4th month in a year is ',sample.months[3]);
+</script>
+</body>
+</html>
